@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #045AA9;
+}
+
+.parent {
+    background-image: url('../images/roofshingles.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    color: var(--primary-color);
+    display: flex;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 32px;
+}
+
+.pre-heading {
+    border: 1px solid white;
+    text-align: center;
+    background: white;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.box-total-div {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.column-div {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 64px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.box-div {
+    border: 1px solid var(--primary-color);
+    background: white;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.box-div:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+.button {
+    color: var(--primary-color);
+    border: 1px solid;
+    border-radius: 4px;
+    padding-right: 64px;
+    padding-left: 64px;
+    background-color: var(--primary-color);
+    color: white;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover {
+    border-width: 2px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: white;
+    font-weight: 600;
+}
+
+.button-div {
+    margin-top: 96px;
+}
+
+.footer-parent {
+    background-color: var(--primary-color);
+    display: grid;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    grid-gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    font-weight: 600;
+}
+
+.copyright {
+    font-weight: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.tp-parent {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: normal;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.terms {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+}
+
+.privacy {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    background-color: #045AA9;
+}
+
+.logo img {
+    height: 24px;
+    width: auto;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+.desktop-logo {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        justify-content: center;
+    }
+
+    .heading {
+        font-size: 32px;
+        padding-top: 0px;
+        text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+    }
+
+    .pre-heading {
+        border: 1px solid white;
+        text-align: center;
+        background: white;
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 20px;
+        border-radius: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .box-total-div {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .logo {
+        padding-top: 16px;
+        padding-bottom: 24px;
+        background-color: white;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .footer-main {
+        flex-direction: column-reverse;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .tp-parent {
+        justify-content: center;
+    }
+}
